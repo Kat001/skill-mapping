@@ -1,0 +1,277 @@
+.top-text a {
+    color: #fff;
+    /*background-color: #ef4a2b; */
+    padding: 2px 15px;
+    border-radius: 6px;
+}
+
+/* ----------------------------
+Custom, iPhone Retina
+------------------------------- */
+
+@media only screen and (min-width: 320px) {
+    .info-icon-box {
+        margin: 0 auto;
+        float: none;
+    }
+    .info_Utility .item-img {
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+    .banner-social-icon {
+        position: absolute;
+        right: 0px;
+        bottom: -95px;
+    }
+    .banner-social-icon-l {
+        position: absolute;
+        left: 0px;
+        bottom: -95px;
+    }
+    .E-mailDirectory {
+        font-size: 12px;
+    }
+    .PhoneDirectory {
+        font-size: 12px;
+    }
+    .main_part_bg .ViewMoreBox {
+        margin-top: 20px;
+    }
+    .modal-m {
+        margin-top: 10% !important;
+    }
+    .main_part {
+        padding-top: 70px !important;
+    }
+    .info-item {
+        width: 50% !important;
+        float: left !important;
+    }
+    .top-text {
+        /*color: #ef4a2b;
+	background-color: #fff;*/
+        font-size: 14px;
+        padding: 2px 5px 2px 5px;
+        float: left;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .top-text h6 {
+        font-size: 12px !important;
+    }
+}
+
+/* ----------------------------
+Extra Small Devices, Phones
+------------------------------- */
+
+@media only screen and (min-width: 480px) {
+    .info-icon-box {
+        margin: 0 auto;
+        float: none;
+    }
+    .info_Utility .item-img {
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+    .banner-social-icon {
+        position: absolute;
+        right: 0px;
+        bottom: -95px;
+    }
+    .banner-social-icon-l {
+        position: absolute;
+        left: 0px;
+        bottom: -95px;
+    }
+    .E-mailDirectory {
+        font-size: 12px;
+    }
+    .PhoneDirectory {
+        font-size: 12px;
+    }
+    .main_part_bg .ViewMoreBox {
+        margin-top: 20px;
+    }
+    .modal-m {
+        margin-top: 10% !important;
+    }
+    .main_part {
+        padding-top: 70px !important;
+    }
+    .info-item {
+        width: 50% !important;
+        float: left !important;
+    }
+    .top-text {
+        /*color: #ef4a2b;
+	background-color: #fff;*/
+        font-size: 14px;
+        padding: 2px 5px 2px 5px;
+        float: left;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .top-text h6 {
+        font-size: 12px !important;
+    }
+}
+
+/* ---------------------
+Small Devices, Tablets 
+------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .info-icon-box {
+        margin: 0 auto;
+        float: left;
+    }
+    .info_Utility .item-img {
+        margin: 0 auto;
+        float: left;
+    }
+    .banner-social-icon {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    .banner-social-icon-l {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .E-mailDirectory {
+        font-size: 12px;
+    }
+    .PhoneDirectory {
+        font-size: 12px;
+    }
+    .main_part_bg .ViewMoreBox {
+        margin-top: 63px;
+    }
+    .modal-m {
+        margin-top: 10% !important;
+    }
+    .main_part {
+        padding-top: 50px !important;
+    }
+    .info-item {
+        width: 20% !important;
+        float: left !important;
+    }
+    .top-text {
+        /*color: #ef4a2b;
+	background-color: #fff;*/
+        font-size: 16px;
+        padding: 2px 15px 2px 2px;
+        float: left;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .top-text h6 {
+        font-size: 14px !important;
+    }
+}
+
+/* -----------------------
+Medium Devices, Desktops
+-------------------------- */
+
+@media only screen and (min-width: 992px) {
+    .info-icon-box {
+        margin: 0 auto;
+        float: left;
+    }
+    .info_Utility .item-img {
+        margin: 0 auto;
+        float: left;
+    }
+    .banner-social-icon {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    .banner-social-icon-l {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .E-mailDirectory {
+        font-size: 12px;
+    }
+    .PhoneDirectory {
+        font-size: 12px;
+    }
+    .main_part_bg .ViewMoreBox {
+        margin-top: 63px;
+    }
+    .modal-m {
+        margin-top: 10% !important;
+    }
+    .main_part {
+        padding-top: 30px !important;
+    }
+    .info-item {
+        width: 20% !important;
+        float: left !important;
+    }
+    .top-text {
+        /*color: #ef4a2b;
+	background-color: #fff;*/
+        font-size: 16px;
+        padding: 2px 15px 2px 2px;
+        float: right;
+        text-align: right;
+        margin-top: 0px;
+    }
+    .top-text h6 {
+        font-size: 14px !important;
+    }
+}
+
+/* --------------------------------------------------
+Large Devices, Wide Screens
+----------------------------------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    .info-icon-box {
+        margin: 0 auto;
+        float: left;
+    }
+    .info_Utility .item-img {
+        margin: 0 auto;
+        float: left;
+    }
+    .banner-social-icon {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    .banner-social-icon-l {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .modal-m {
+        margin-top: 10% !important;
+    }
+    .main_part {
+        padding-top: 30px !important;
+    }
+    .info-item {
+        width: 20% !important;
+        float: left !important;
+    }
+    .top-text {
+        /*color: #ef4a2b;
+	background-color: #fff;*/
+        font-size: 16px;
+        padding: 2px 15px 2px 2px;
+        float: right;
+        text-align: right;
+        margin-top: 0px;
+    }
+    .top-text h6 {
+        font-size: 14px !important;
+    }
+}

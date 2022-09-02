@@ -1,0 +1,615 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head id="Head1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill Mapping Projects</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'assets1/img/fav.png' %}" sizes="16x16">
+    <meta name="keywords" content="" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="{% static 'assets1/FrontEndContent/font-awesome/css/font-awesome.min.css' %}">
+    <!-- Bootstrap core CSS -->
+    <link rel="icon" href="+91-9557631949" sizes="16x16" />
+    <link href="{% static 'assets1/FrontEndContent/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <!-- Full Calender CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/fullcalendar.css' %}" rel="stylesheet" />
+    <!-- Bx-Slider StyleSheet CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/jquery.bxslider.css' %}" rel="stylesheet" />
+    <!-- Owl Carousel StyleSheet CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/owl.carousel.css' %}" rel="stylesheet" />
+    <!-- Font Awesome StyleSheet CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <!-- Pretty Photo CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/prettyPhoto.css' %}" rel="stylesheet" />
+    <!-- SVG Icon StyleSheet CSS -->
+    <link href="{% static 'assets1/FrontEndContent/svg-icon/svg-style.css' %}" rel="stylesheet" />
+    <!-- Widget CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/widget.css' %}" rel="stylesheet" />
+    <!-- Typography CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/typography.css' %}" rel="stylesheet" />
+    <!-- Time Circles CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/TimeCircles.css' %}" rel="stylesheet" />
+    <!-- Shortcodes CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/shortcodes.css' %}" rel="stylesheet" />
+    <!-- DL Menu CSS -->
+    <link href="{% static 'assets1/FrontEndContent/js/dl-menu/component.css' %}" rel="stylesheet" />
+    <!-- Custom Main StyleSheet CSS -->
+    <link href="{% static 'assets1/FrontEndContent/style.css' %}" rel="stylesheet" />
+    <!--  Responsive CSS -->
+    <link href="{% static 'assets1/FrontEndContent/media.css' %}" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <!--<link href="animate.css" rel="stylesheet" />-->
+    <!-- Color CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/color.css' %}" rel="stylesheet" />
+    <!-- Responsive CSS -->
+    <link href="{% static 'assets1/FrontEndContent/css/responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets1/FrontEndContent/css/scrolling-nav.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets1/FrontEndContent/111/animate.min.css' %}" rel="stylesheet" />
+    <!--data table-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets1/DataTables/datatables.css' %}">
+    <script type="text/javascript" charset="utf8" src="{% static 'assets1/DataTables/datatables.js' %}"></script>
+    <!--Gallery CSS-->
+    <style type="text/css">
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Slider */
+        
+        .slick-slide {
+            margin: 0px 20px;
+        }
+        
+        .slick-slide img {
+            width: 100%;
+            height: 150px;
+            border-radius: 20px;
+        }
+        
+        .Online_Services {
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(239, 74, 43)), url(../aucklandhypnobirthing.co.nz/wp-content/uploads/2018/02/blur-lights-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* padding-bottom: 40px; */
+            padding-top: 15px;
+        }
+        
+        .kode_video_bg {
+            float: left;
+            width: 100%;
+            background-color: #948e8e;
+            background: url(../www.ctvalleybrewing.com/wp-content/uploads/2018/06/home-bg-new.jpg);
+            background-repeat: repeat-x;
+            padding: 25px 0px;
+            margin-bottom: 25px !important;
+        }
+        
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slick-list:focus {
+            outline: none;
+        }
+        
+        .slick-list.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+        
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        
+        .slick-track:before,
+        .slick-track:after {
+            display: table;
+            content: "";
+        }
+        
+        .slick-track:after {
+            clear: both;
+        }
+        
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+        
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        
+        [dir="rtl"] .slick-slide {
+            float: right;
+        }
+        
+        .slick-slide img {
+            display: block;
+        }
+        
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+        
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+        
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+        
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+        
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+        
+        .mobilesize {
+            height: 170px !important;
+            border: 5px solid #ef4a2b;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .mobilesize {
+                height: 100px !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <style>
+        .desk {
+            padding: 14px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .desk {
+                padding: 0px;
+            }
+        }
+    </style>
+    <style>
+        .searchedText {
+            background: #ffea00 !important;
+        }
+        
+        .carousel {
+            /*position: inherit;*/
+        }
+        
+        .ourServices .media {
+            height: auto;
+            padding: 0;
+            position: relative;
+            margin: 0;
+        }
+        
+        .body {
+            overflow-x: hidden !important;
+        }
+        
+        .ourServices .top_padding {
+            width: 20%;
+            padding: 15px;
+        }
+        
+        .ourServices .media:before {
+            content: "";
+            width: 100%;
+            float: left;
+            padding-top: 100%;
+        }
+        
+        .ourServices .media .col-sm-8 {
+            display: none;
+        }
+        
+        .ourServices .media .col-sm-4 {
+            width: auto;
+            position: static;
+        }
+        
+        .ourServices .media img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            max-width: 90%;
+        }
+        
+        .owl-item figure {
+            height: 245px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .ColorClass {
+            background-color: black !important;
+            color: white !important;
+        }
+        
+        .brd99 {
+            height: 1px !important;
+            background-color: #fff !important;
+            width: 100% !important;
+            margin-bottom: 8px !important;
+            margin-top: 5px !important;
+        }
+    </style>
+    <style>
+        .navbar-form .input-group .input-group-addon,
+        .navbar-form .input-group .input-group-btn,
+        .navbar-form .input-group .form-control {
+            width: none;
+        }
+    </style>
+    <script src="{% static 'assets1/FrontEndContent/js/jquery.js' %}"></script>
+    <script src="{% static 'assets1/FrontEndContent/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets1/FrontEndContent/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets1/FrontEndContent/js/scrolling-nav.js' %}"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="loader"></div>
+    <div class="kode_wrapper">
+        <header>
+            <div class="header_mid">
+                <div class="container2">
+                    <div class="col-xs-4 col-sm-8 col-md-3 header_mid1 text-center">
+                        <a href="index"> <img src="{% static 'assets1/img/Skill Maping Projects-logos_black.png' %}" class="img-responsive" alt="Logo Image Here" style=" width:100px; margin-left:10px;"></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-8 col-md-4 top-text">
+                        <div class="">
+                            <div class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="kode-responsive-navigation" class="dl-menuwrapper pull-right">
+                    <button class="dl-trigger">Open Menu</button>
+                    <ul class="dl-menu">
+                        <li class="menu-item kode-parent-menu"><a href="index">Home </a>
+                        </li>
+                        <li class="menu-item kode-parent-menu"><a href="about-us">About Us</a>
+                        </li>
+                        <li class="menu-item kode-parent-menu"><a href="team">Team </a>
+                        </li>
+                        <li class="menu-item kode-parent-menu"><a href="event">Event</a>
+                        </li>
+                        <li class="menu-item kode-parent-menu">
+                            <a href="#">Projects</a>
+                            <ul class="dl-submenu">
+                                <li><a href="jaivic">Jaivik Kheti</a></li>
+                                <li><a href="sakhi_saheli">Sakhi Saheli</a></li>
+                                <li><a href="yuva_rozgar">Yuva Rozgar</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item kode-parent-menu"><a href="contact-us">Contact Us</a>
+                        </li>
+                        <li class="menu-item kode-parent-menu"><a href="login"> Login</a> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 top_strip">
+                    <ul style="
+                        float: right;
+                        margin-top: 10px;
+                        ">
+                        <li class="helpine"><a class="" href="mailto: info@smdsociety.org"><i class="fa fa-envelope-o"
+                            aria-hidden="true"> &nbsp;<b>ईमेल: info@smdsociety.org</b></i></a></li>
+                        <li class="helpine">
+                            <a href="tel:+91 9557631949"> <img src="{% static 'assets1/FrontEndContent/img/phone.png' %}" alt="Logo Image Here"> &nbsp;<b>मोबाइल नंबर :+91-9557631949</b></a>
+                        </li>
+                        <!--<li><a href="index"> <img src="FrontEndContent/img/home.png" alt="home"> &nbsp;एड्रेस:बड़ौदा बैंक के सामने निकट पेट्रोल पंप खजुरी ख़ास नई दिल्ली -110094 </a></li>-->
+                        <li>
+                            <a href="#SkipToNavigation" class="page-scroll"> <img src="{% static 'assets1/FrontEndContent/img/Arow-btm.png' %}" alt="Skip to navigation"> &nbsp;Skip to navigation</a>
+                        </li>
+                        <li class=" search_header" style="display:none !important;">
+                            <div>
+                                <input type="text" name="search" placeholder="Search..">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--top_strip-->
+                <div class="clearfix"></div>
+            </div>
+    </div>
+    <!--header_mid-->
+
+    <div class="kode_banner222">
+        <div class="homepage-banner">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to='0' class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to='1' class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to='2' class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{% static 'assets1/slider/Banner-1.jpg' %}" alt="" />
+                    </div>
+                    <div class="item ">
+                        <img src="{% static 'assets1/slider/Banner-2.jpg' %}" alt="" />
+                    </div>
+                    <div class="item ">
+                        <img src="{% static 'assets1/slider/Banner-3.jpg' %}" alt="" />
+                    </div>
+                    <!-- <div class="item"> <img src='IndexBannerImages/B2.jpg' alt="" /> </div>
+                        <div class="item"> <img src='IndexBannerImages/B3.jpg' alt="" /> </div> -->
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
+                    class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span
+                    class="sr-only">Previous</span> </a><a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"
+                    aria-hidden="true"></span><span class="sr-only">Next</span> </a>
+                <div class="clearfix"></div>
+                <div class=" banner-social-icon">
+                </div>
+                <div class=" banner-social-icon-l">
+                </div>
+            </div>
+        </div>
+        <div class=" clearfix"></div>
+    </div>
+    <!--black-strip-->
+    <div class="kode_content">
+        <div class="kode_navigation_outr_wrap desk" id="SkipToNavigation">
+            <div class="container">
+                <div class=" row" style="width:1185px; ">
+                    <div class="kode_ui_element1 ">
+                        <div class="kode_menu">
+                            <ul>
+                                <li>
+                                    <a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only"></span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'about-us' %}"> About Us</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'team' %}"> Team </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'event' %}">Event</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#"> Projects </a>
+                                    <ul>
+                                        {% for project in projects %}
+                                        <li><a class="nav-link" href="{% url 'project' project.id %}">{{ project.name }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'contact-us' %}"> Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'login' %}"> Login </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" clearfix"></div>
+        <script type='text/javascript' src='../platform-api.sharethis.com/js/sharethis.js#property=5c60047a83748d00113154d2&product=sticky-share-buttons' async='async'></script>
+        <div id="fb-root"></div>
+
+        <!--main_part-->
+        <!-- <div class=" clearfix"></div> -->
+        <div class="Online_Services isotopeSelector illustrations" id="SkipToMainContent" style="visibility: visible; ">
+
+            {% block content %} {% endblock content %}
+
+            <div class="Public_Utility" id="UsefulLinks">
+                <div class="container1">
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-sm-3 col-md-4 pu_brd isotopeSelector illustrations " style="visibility: visible; "></div>
+                            <div class="col-sm-6 col-md-4 text-center isotopeSelector illustrations " style="visibility: visible; ">
+                                <h4 class="isotopeSelector illustrations " style="visibility: visible;color: white;">
+                                    Skill Mapping Projects
+                                </h4>
+                            </div>
+                            <div class=" col-sm-3 col-md-4 pu_brd"></div>
+                        </div>
+                        <div class=" clearfix"></div>
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-lg-2 col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Footer Wrap Start-->
+
+            <footer class="footer">
+                <div class="kode_footer_bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-footer">
+                                    <div class="footer-logo">
+                                        <a href="index">
+                                            <img src="{% static 'assets1/img/Skill Maping Projects-logos_black.png' %}" alt="logo" height="" width="120px">
+                                        </a>
+                                    </div>
+                                    <div style="font-size:40px">
+                                        <a href=""><i class="fa fa-facebook-official"
+                                        aria-hidden="true"></i></a>
+                                        <a href="twitter"><i class="fa fa-twitter-square"
+                                        aria-hidden="true"></i></a>
+                                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                        <a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="kode_contact_wrap">
+                                    <h3>Contact Us</h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span><i class="fa fa-envelope-o" aria-hidden="true"> ईमेल:<a
+                                        class=""
+                                        href="mailto:info@smdsociety.org">info@smdsociety.org</i></a><br></span><br>
+                                            <span style="color: #fff;"><i class="fa fa-phone"
+                                        aria-hidden="true"> कांटेक्ट: <a style=""
+                                        href="tel:+919557631949">+91-9557631949</i></a></span><br><br>
+                                            <i class="fa fa-map-marker" aria-hidden="true"> <span
+                                        style="color: #fff;">बड़ौदा बैंक के सामने निकट पेट्रोल पंप
+                                        खजुरी ख़ास नई दिल्ली -110094</i></span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="quick_links">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-footer newsletter_box">
+                                    <h3>Quick Links</h3>
+                                    <ul class="quick_links">
+                                        <li>
+                                            <a href="{% url 'home' %}"><i class="fa fa-arrow-right" aria-hidden="true">
+                                        Home </i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <button href="{% url 'about-us' %}"><i class="fa fa-arrow-right" aria-hidden="true">
+                                        About Us
+                                        </i></button>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'team' %}"><i class="fa fa-arrow-right" aria-hidden="true">
+                                        Team
+                                        </i></a>
+                                        </li>
+                                        <li>
+                                            <a href="event"><i class="fa fa-arrow-right" aria-hidden="true">
+                                        Event
+                                        </i></a>
+                                        </li>
+                                        <li>
+                                            <a href="index"><i class="fa fa-arrow-right" aria-hidden="true">
+                                        Projects
+                                        </i></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><i class="fa fa-arrow-right"
+                                        aria-hidden="true">
+                                        Contact Us</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="/"><i class="fa fa-arrow-right" aria-hidden="true">
+                                        Login
+                                        </i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-footer newsletter_box">
+                                    <h3>Google Map</h3>
+                                    <ul class="quick_links">
+                                        <p></p>
+                                </div>
+                            </div>
+                            <footer>
+                                <div class="container">
+                                    <div style="margin:30px 0px 10px;">© 2022 SMD SOCIETY. ALL RIGHTS RESERVED.
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="{% static 'assets1/FrontEndContent/js/jquery-2.2.0.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'assets1/FrontEndContent/js/slick.js' %}"></script>
+        <script src="{% static 'assets1/FrontEndContent/js/bootstrap.min.js' %}"></script>
+        <link href="{% static 'assets1/FrontEndContent/css/bootstrap.min.css' %}" rel="stylesheet">
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".customer-logos").slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }]
+                });
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="col-sm-12 isotopeSelector illustrations wow rotateInUpLeft" style="visibility: visible; animation-name: rotateInUpLeft;">
+    <div class="main_part_inL">
+        <div class="main_part_bg isotopeSelector illustrations wow zoomInUp" style="visibility: visible; animation-name: zoomInUp;">
+            <div class=" ">
+                <h3 style="color:black">{{ project.name }}</h3>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-12">
+            <img src="{{ project.project_image1.url}}" alt="खेती" width="100%">
+        </div>
+        <!--main_part_bg-->
+        <div class="col-sm-12">
+            <div class="main_part_bg isotopeSelector illustrations wow zoomInUp" style="visibility: visible; animation-name: zoomInUp;">
+                {% if project.heading1 %}
+                <h4>{{ project.heading1 }}</h4>
+                {% endif %} {% if project.text1 %}
+                <p>{{ project.text1 }}</p>
+                {% endif %} {% if project.heading2 %}
+                <h4>{{ project.heading2 }}</h4>
+                {% endif %} {% if project.text21 %}
+                <p>{{ project.text21 }}</p>
+                {% endif %} {% if project.text22 %}
+                <p>{{ project.text22 }}</p>
+                {% endif %} {% if project.text23 %}
+                <p>{{ project.text23 }}</p>
+                {% endif %} {% if project.text24 %}
+                <p>{{ project.text24 }}</p>
+                {% endif %} {% if project.text25 %}
+                <p>{{ project.text25 }}</p>
+                {% endif %} {% if project.heading3 %}
+                <h4>{{ project.heading3 }}</h4>
+                {% endif %} {% if project.text31 %}
+                <p>{{ project.text31 }}</p>
+                {% endif %} {% if project.text32 %}
+                <p>{{ project.text32 }}</p>
+                {% endif %} {% if project.text33 %}
+                <p>{{ project.text33 }}</p>
+                {% endif %} {% if project.text34 %}
+                <p>{{ project.text34 }}</p>
+                {% endif %} {% if project.text35 %}
+                <p>{{ project.text35 }}</p>
+                {% endif %} {% if project.heading4 %}
+                <h4>{{ project.heading4 }}</h4>
+                {% endif %} {% if project.text41 %}
+                <p>{{ project.text41 }}</p>
+                {% endif %} {% if project.text42 %}
+                <p>{{ project.text42 }}</p>
+                {% endif %} {% if project.text43 %}
+                <p>{{ project.text43 }}</p>
+                {% endif %} {% if project.text44 %}
+                <p>{{ project.text44 }}</p>
+                {% endif %} {% if project.text45 %}
+                <p>{{ project.text45 }}</p>
+                {% endif %}
+
+                <div class=" clearfix"></div>
+            </div>
+        </div>
+        <div style="background-color:red;">
+            {% if project.project_image2 %}
+            <div class="col-sm-4" style="margin-bottom: 25px;">
+                <img src="{{ project.project_image2.url}}" width="500" class="img-responsive" alt="" style="height:176px;">
+                <a style="color: #ef4a2b;">
+                </a>
+            </div>
+            {% endif %} {% if project.project_image3 %}
+            <div class="col-sm-4" style="margin-bottom: 25px;">
+                <img src="{{ project.project_image3.url}}" width="500" class="img-responsive" alt="" style="height:176px;">
+                <a style="color: #ef4a2b;">
+                </a>
+            </div>
+            {% endif %} {% if project.project_image4 %}
+            <div class="col-sm-4" style="margin-bottom: 25px;">
+                <img src="{{ project.project_image4.url}}" width="500" class="img-responsive" alt="" style="height:176px;">
+                <a style="color: #ef4a2b;">
+                </a>
+            </div>
+            {% endif %} {% if project.project_image5 %}
+            <div class="col-sm-4" style="margin-bottom: 25px;">
+                <img src="{{ project.project_image5.url}}" width="500" class="img-responsive" alt="" style="height:176px;">
+                <a style="color: #ef4a2b;">
+                </a>
+            </div>
+            {% endif %} {% if project.project_image6 %}
+            <div class="col-sm-4" style="margin-bottom: 25px;">
+                <img src="{{ project.project_image6.url}}" width="500" class="img-responsive" alt="" style="height:176px;">
+                <a style="color: #ef4a2b;">
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        <a style="color: #ef4a2b;">
+        </a>
+    </div>
+
+
+    {% endblock content %}

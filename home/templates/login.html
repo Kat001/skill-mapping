@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="login-body">
+    <article>
+        <section>
+            <div class="col-sm-4"></div>
+            <div class="tab-content tabs-login col-lg-4 col-md- col-sm-4 cols-xs-6">
+                <div id="login-access" class="tab-pane fade active in" ;="" style="border:1px">
+
+                    <div style="font-size: 20px;">
+                        <h5></h5>
+                    </div>
+
+                    <h5 style="color: #ef4a2b;margin-bottom: 20px; text-align:center">Login</h5>
+                    <img src="img/Skill Maping Projects-logos_black.png" alt="logo" width="100px;" id="center">
+                    <form method="post">
+                        <!--<div class="form-group ">-->
+                        <!--  <b>Name*</b>-->
+
+                        <!--         <input type="text"  style=" box-shadow: 10px 10px 5px #ef4a2b; border:2px solid #ef4a2b" class="form-control" name="name" id="login_value" placeholder="Name" tabindex="1" required="" />-->
+                        <!--</div>-->
+
+
+
+                        <div class="form-group ">
+                            <b>Mobile*  </b>
+
+                            <input type="number" style=" box-shadow: 10px 10px 5px #ef4a2b; border:2px solid #ef4a2b" class="form-control" name="mobile_no" id="login_value" placeholder="Mobile" tabindex="1" required="">
+                        </div>
+
+                        <div class="form-group ">
+                            <b>Password*</b>
+                            <input type="password" style=" box-shadow: 10px 10px 5px #ef4a2b; border:2px solid #ef4a2b" class="form-control" name="password" id="login_value" placeholder="Password" tabindex="1" required="">
+                        </div>
+
+                        <!--           <div class="form-group ">-->
+                        <!--                   <b>Message*</b>-->
+                        <!--<textarea type="text"  style=" box-shadow: 10px 10px 5px #ef4a2b; border:2px solid #ef4a2b" class="form-control" name="message" id="login_value" placeholder="Message" tabindex="1" required="" > </textarea>  -->
+                        <!--         </div>-->
+
+
+
+                        <br>
+                        <div class="form-group ">
+
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="main_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 isotopeSelector illustrations wow rotateInUpLeft" style="visibility: visible; animation-name: rotateInUpLeft;">
+                <div class="main_part_bg isotopeSelector illustrations wow zoomInUp" style="visibility: visible; animation-name: zoomInUp;">
+                    <div class=" ">
+                        <h3>Event</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                {% for event in events %}
+                <div class="col-md-3 col-xs-12 item isotopeSelector illustrations " style="visibility: visible;" height="100px">
+                    <a href="#">
+                        <h6 style="background-color: #ef4a2b; color:white!important; text-align: center;">{{ event.event_name }}</h6>
+                        <img src="{{ event.event_image.url }}" alt="#" width="300px" height="200px">
+                    </a>
+                    <p style="background-color: #ef4a2b; color:white!important; text-align: center;"> </p>
+                    {% if event.event_text1 %}
+                    <p>{{ event.event_text1}}&nbsp;</p>
+                    {% endif %} {% if event.event_text2 %}
+                    <p>{{ event.event_text2}}&nbsp;</p>
+                    {% endif %} {% if event.event_text3 %}
+                    <p>{{ event.event_text3}}&nbsp;</p>
+                    {% endif %} {% if event.event_text4 %}
+                    <p>{{ event.event_text4}}&nbsp;</p>
+                    {% endif %} {% if event.event_text5 %}
+                    <p>{{ event.event_text5}}&nbsp;</p>
+                    {% endif %} {% if event.event_text6 %}
+                    <p>{{ event.event_text6}}&nbsp;</p>
+                    {% endif %} {% if event.event_text7 %}
+                    <p>{{ event.event_text7}}&nbsp;</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <!-- <div class="col-md-3 col-xs-12 item isotopeSelector illustrations " style="visibility: visible;" height="100px">
+                    <a href="event">
+                        <h6 style="background-color: #ef4a2b; color:white!important; text-align: center;"> लोन के प्रकार </h6>
+                        <img src="img/event/लोन-के-प्रकार-images.jpeg" alt="लोन के प्रकार " width="300px" height="200px">
+                    </a>
+                    <p style="background-color: #ef4a2b; color:white!important; text-align: center;"> </p>
+                    <p style="text-align:justify">संस्था द्वारा दिए जाने वाले ऋण....</p>
+
+                    <p style="text-align:justify">1. समूह लोन</p>
+
+                    <p style="text-align:justify">2. बिज़नेस लोन</p>
+
+                    <p style="text-align:justify">3. पर्सनल लोन</p>
+
+                    <p style="text-align:justify">4. गोल्ड लोन&nbsp;</p>
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

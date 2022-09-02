@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<h2 style="text-align: center;color: red;">Events</h2>
+<div class="container">
+    <div class="row">
+        {% for event in events %}
+        <div class="col-md-3 col-xs-12 item isotopeSelector illustrations " style="visibility: visible; ">
+            <a href="event">
+                <img src="{{ event.event_image.url }}" class="img-responsive mobilesize" alt="महिला समूह लोन लेने के लिए जरुरी दस्तावेज">
+                <h6 style="background-color: #ef4a2b; color:white!important; text-align: center;"> {{ event.event_name }}</h6>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class=" clearfix"></div>
+<!--Video & Audio Wrap End-->
+<div class="Online_Services isotopeSelector illustrations" id="SkipToMainContent" style="visibility: visible; ">
+    <div class="container">
+        <div class="row">
+            <h2 style="text-align: center;color: red;">Our Projects</h2>
+            {% for project in projects %}
+            <div class="col-md-12 col-sm-12 col-xs-12 item isotopeSelector illustrations " style="visibility: visible;  ;width: 350px  ; ">
+                <a href="jaivic">
+                    <h5 style="background-color: #ef4a2b; color:white!important; text-align: center;"> {{ project.name }} </h5>
+                    <a href="jaivic"> <img src="{{ project.project_image1.url }}" class="img-responsive" alt=""></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
