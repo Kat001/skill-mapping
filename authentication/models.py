@@ -36,7 +36,6 @@ class CustomUserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-	username = None
 	sponsor = models.ForeignKey('self',on_delete=models.SET_NULL,blank=True,null=True)
 	mobile_no = models.CharField(max_length=10, unique=True)
 	email = models.EmailField(verbose_name="email", max_length=60, unique=False,blank=True,null=True)
@@ -49,7 +48,6 @@ class User(AbstractBaseUser):
 	zip_code = models.CharField(max_length=6,blank=True,null=True)
 	profile_pic = models.ImageField(upload_to="profile_pics",null=True,blank=True)
 	password1 = models.CharField(max_length=30,null=True,blank=True)
-	username = models.CharField(max_length=30, unique=True)
 	date_joined	= models.DateTimeField(verbose_name='date joined', auto_now_add=True)
 	date_active	= models.DateTimeField(verbose_name='date active',null=True,blank=True)
 	last_login = models.DateTimeField(verbose_name='last login', auto_now=True)
